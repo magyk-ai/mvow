@@ -1,0 +1,27 @@
+{
+  "puzzle": "puzzle_y_vowel.json",
+  "entry": "e1",
+  "steps": [
+    {
+      "action": { "type": "HINT", "entryId": "e1" },
+      "expect": {
+        "maskedDisplay": "MYTH",
+        "hintIndex": 1,
+        "skeleton": "mth"
+      }
+    },
+    {
+      "action": { "type": "UPDATE_GUESS", "entryId": "e1", "guessText": "myth" },
+      "expect": {
+        "matchedPrefixLen": 3
+      }
+    },
+    {
+      "action": { "type": "SUBMIT_ENTRY", "entryId": "e1" },
+      "expect": {
+        "isSolved": true,
+        "completed": false
+      }
+    }
+  ]
+}

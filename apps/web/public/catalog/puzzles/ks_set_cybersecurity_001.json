@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "puzzle_id": "ks_set_cybersecurity_001",
+  "language": "en",
+  "title": "Cybersecurity",
+  "theme_reveal": {
+    "headline": "Cybersecurity",
+    "body": "Key concepts used to protect systems, data, and users."
+  },
+  "entries": [
+    {
+      "entry_id": "e1",
+      "clue": "A process proving who you are, often via password, biometrics, or a code",
+      "answer": "AUTHENTICATION"
+    },
+    {
+      "entry_id": "e2",
+      "clue": "Confirming what an authenticated user is allowed to do",
+      "answer": "AUTHORIZATION"
+    },
+    {
+      "entry_id": "e3",
+      "clue": "A common technique where attackers trick users into revealing secrets",
+      "answer": "PHISHING"
+    },
+    {
+      "entry_id": "e4",
+      "clue": "Extra security step beyond password; often abbreviated MFA",
+      "answer": "MULTI FACTOR AUTHENTICATION"
+    },
+    {
+      "entry_id": "e5",
+      "clue": "Scrambled data that can only be read with the right key",
+      "answer": "ENCRYPTION"
+    },
+    {
+      "entry_id": "e6",
+      "clue": "\"Least privilege\" model that trusts no one by default",
+      "answer": "ZERO TRUST"
+    }
+  ]
+}

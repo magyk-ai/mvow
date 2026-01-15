@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "target": "ES2022",
+    "paths": {
+      "@ks/engine": ["../../packages/engine/src/index.ts"]
+    }
+  },
+  "include": ["src"]
+}

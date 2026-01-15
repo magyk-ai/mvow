@@ -1,0 +1,10 @@
+{
+  "name": "@ks/tools-cli",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "CLI tool for testing Missing Vowel engine",
+  "main": "./src/ks-run.ts",
+  "dependencies": {
+    "@ks/engine": "*"
+  }
+}

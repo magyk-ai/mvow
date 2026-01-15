@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "puzzle_id": "ks_set_punctuation",
+  "language": "en",
+  "title": "Punctuation Test",
+  "theme_reveal": {
+    "headline": "Punctuation Handling",
+    "body": "Testing hyphens and apostrophes"
+  },
+  "entries": [
+    {
+      "entry_id": "e1",
+      "clue": "Parent's parent's daughter who married your parent",
+      "answer": "MOTHER-IN-LAW"
+    },
+    {
+      "entry_id": "e2",
+      "clue": "Keep going (song title)",
+      "answer": "DON'T STOP"
+    }
+  ]
+}

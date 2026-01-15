@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "puzzle_id": "ks_set_basic",
+  "language": "en",
+  "title": "Basic Test",
+  "theme_reveal": {
+    "headline": "Relationships",
+    "body": "Words about family connections"
+  },
+  "entries": [
+    {
+      "entry_id": "e1",
+      "clue": "Genealogy group",
+      "answer": "FAMILY"
+    }
+  ]
+}

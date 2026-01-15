@@ -1,0 +1,43 @@
+{
+  "puzzle": "puzzle_basic.json",
+  "entry": "e1",
+  "steps": [
+    {
+      "action": { "type": "HINT", "entryId": "e1" },
+      "expect": {
+        "maskedDisplay": "FAM_L_",
+        "hintIndex": 1,
+        "matchedPrefixLen": 0
+      }
+    },
+    {
+      "action": { "type": "HINT", "entryId": "e1" },
+      "expect": {
+        "maskedDisplay": "FAMIL_",
+        "hintIndex": 2
+      }
+    },
+    {
+      "action": { "type": "UPDATE_GUESS", "entryId": "e1", "guessText": "fam" },
+      "expect": {
+        "guessText": "fam",
+        "matchedPrefixLen": 2
+      }
+    },
+    {
+      "action": { "type": "UPDATE_GUESS", "entryId": "e1", "guessText": "family" },
+      "expect": {
+        "guessText": "family",
+        "matchedPrefixLen": 3,
+        "skeleton": "fml"
+      }
+    },
+    {
+      "action": { "type": "SUBMIT_ENTRY", "entryId": "e1" },
+      "expect": {
+        "isSolved": true,
+        "completed": true
+      }
+    }
+  ]
+}

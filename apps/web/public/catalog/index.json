@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "language": "en",
+  "puzzles": [
+    {
+      "puzzle_id": "ks_set_cybersecurity_001",
+      "title": "Cybersecurity",
+      "path": "/catalog/puzzles/ks_set_cybersecurity_001.json",
+      "tags": [
+        "professional",
+        "cybersecurity",
+        "security"
+      ]
+    },
+    {
+      "puzzle_id": "ks_set_devops_001",
+      "title": "DevOps",
+      "path": "/catalog/puzzles/ks_set_devops_001.json",
+      "tags": [
+        "professional",
+        "devops",
+        "engineering"
+      ]
+    },
+    {
+      "puzzle_id": "ks_set_finance_001",
+      "title": "Finance",
+      "path": "/catalog/puzzles/ks_set_finance_001.json",
+      "tags": [
+        "professional",
+        "finance",
+        "business"
+      ]
+    },
+    {
+      "puzzle_id": "ks_set_product_management_001",
+      "title": "Product Management",
+      "path": "/catalog/puzzles/ks_set_product_management_001.json",
+      "tags": [
+        "professional",
+        "product",
+        "business"
+      ]
+    }
+  ]
+}

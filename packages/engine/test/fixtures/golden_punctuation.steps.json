@@ -1,0 +1,33 @@
+{
+  "puzzle": "puzzle_punctuation.json",
+  "entry": "e1",
+  "steps": [
+    {
+      "action": { "type": "HINT", "entryId": "e1" },
+      "expect": {
+        "maskedDisplay": "MOTH_R-_N-L_W",
+        "hintIndex": 1
+      }
+    },
+    {
+      "action": { "type": "UPDATE_GUESS", "entryId": "e1", "guessText": "mother" },
+      "expect": {
+        "matchedPrefixLen": 4
+      }
+    },
+    {
+      "action": { "type": "UPDATE_GUESS", "entryId": "e1", "guessText": "mother-in-law" },
+      "expect": {
+        "matchedPrefixLen": 7,
+        "skeleton": "mthrnlw"
+      }
+    },
+    {
+      "action": { "type": "SUBMIT_ENTRY", "entryId": "e1" },
+      "expect": {
+        "isSolved": true,
+        "completed": false
+      }
+    }
+  ]
+}

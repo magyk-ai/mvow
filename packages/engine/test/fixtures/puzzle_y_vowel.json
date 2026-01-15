@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "puzzle_id": "ks_set_y_vowel",
+  "language": "en",
+  "title": "Y as Vowel Test",
+  "theme_reveal": {
+    "headline": "Y Treatment",
+    "body": "Testing Y as a vowel"
+  },
+  "entries": [
+    {
+      "entry_id": "e1",
+      "clue": "Ancient Greek legend or story",
+      "answer": "MYTH"
+    },
+    {
+      "entry_id": "e2",
+      "clue": "Musical beat pattern",
+      "answer": "RHYTHM"
+    }
+  ]
+}

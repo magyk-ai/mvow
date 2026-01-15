@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "puzzle_id": "ks_set_devops_001",
+  "language": "en",
+  "title": "DevOps",
+  "theme_reveal": {
+    "headline": "DevOps",
+    "body": "Practices and tooling that speed up reliable software delivery."
+  },
+  "entries": [
+    {
+      "entry_id": "e1",
+      "clue": "Automated pipeline that builds, tests, and deploys code changes",
+      "answer": "CI CD PIPELINE"
+    },
+    {
+      "entry_id": "e2",
+      "clue": "Infrastructure defined and managed through code and version control",
+      "answer": "INFRASTRUCTURE AS CODE"
+    },
+    {
+      "entry_id": "e3",
+      "clue": "A small, portable unit that packages an app and its dependencies",
+      "answer": "CONTAINER"
+    },
+    {
+      "entry_id": "e4",
+      "clue": "Tool widely used to build, ship, and run containers",
+      "answer": "DOCKER"
+    },
+    {
+      "entry_id": "e5",
+      "clue": "System for automating deployment, scaling, and management of containers",
+      "answer": "KUBERNETES"
+    },
+    {
+      "entry_id": "e6",
+      "clue": "Practice of collecting metrics, logs, and traces to understand system health",
+      "answer": "OBSERVABILITY"
+    }
+  ]
+}

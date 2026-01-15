@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "puzzle_id": "ks_set_product_management_001",
+  "language": "en",
+  "title": "Product Management",
+  "theme_reveal": {
+    "headline": "Product Management",
+    "body": "Core concepts and artifacts used by product teams."
+  },
+  "entries": [
+    {
+      "entry_id": "e1",
+      "clue": "A prioritized list of work items.",
+      "answer": "BACKLOG"
+    },
+    {
+      "entry_id": "e2",
+      "clue": "A high-level plan",
+      "answer": "ROADMAP"
+    },
+    {
+      "entry_id": "e3",
+      "clue": "The smallest version you can ship",
+      "answer": "MINIMUM VIABLE PRODUCT"
+    },
+    {
+      "entry_id": "e4",
+      "clue": "A statement explaining the value a product delivers and to whom",
+      "answer": "VALUE PROPOSITION"
+    },
+    {
+      "entry_id": "e5",
+      "clue": "A requirement written from the user’s perspective",
+      "answer": "USER STORY"
+    },
+    {
+      "entry_id": "e6",
+      "clue": "When a product strongly satisfies market demand",
+      "answer": "PRODUCT MARKET FIT"
+    }
+  ]
+}

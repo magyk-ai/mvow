@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "puzzle_id": "ks_set_finance_001",
+  "language": "en",
+  "title": "Finance",
+  "theme_reveal": {
+    "headline": "Finance",
+    "body": "Foundational terms for money, markets, and business finance."
+  },
+  "entries": [
+    {
+      "entry_id": "e1",
+      "clue": "A plan that estimates income and expenses over a period",
+      "answer": "BUDGET"
+    },
+    {
+      "entry_id": "e2",
+      "clue": "Money owed by a person or company that must be repaid",
+      "answer": "DEBT"
+    },
+    {
+      "entry_id": "e3",
+      "clue": "Ownership shares in a company, also called equities",
+      "answer": "STOCK"
+    },
+    {
+      "entry_id": "e4",
+      "clue": "A pool of investments managed together; often abbreviated ETF or mutual",
+      "answer": "FUND"
+    },
+    {
+      "entry_id": "e5",
+      "clue": "The increase in value of an investment over time",
+      "answer": "CAPITAL GAINS"
+    },
+    {
+      "entry_id": "e6",
+      "clue": "Diversifying by spreading investments across different assets",
+      "answer": "ASSET ALLOCATION"
+    }
+  ]
+}

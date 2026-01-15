@@ -1,0 +1,204 @@
+/* Entry Card - Base */
+.entry-card {
+  background: var(--card-default);
+  border-radius: var(--card-border-radius);
+  padding: var(--spacing-md) var(--spacing-lg);
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  transition: background var(--transition-slow), transform var(--transition-normal);
+}
+
+.entry-card:hover:not(.solved),
+.entry-card:focus-visible:not(.solved) {
+  background: var(--card-active);
+}
+
+/* Active State */
+.entry-card.active {
+  background: var(--card-active);
+}
+
+/* Solved State */
+.entry-card.solved {
+  background: var(--card-correct);
+  cursor: default;
+  animation: correctPulse 0.5s ease;
+}
+
+/* Wrong State */
+.entry-card.wrong {
+  background: var(--card-wrong);
+  animation: shake 0.4s ease-in-out;
+}
+
+/* Completed View - pill style for finished puzzles */
+.entry-card.completed-view {
+  border-radius: var(--border-radius-pill);
+  padding: var(--spacing-sm) var(--spacing-lg);
+}
+
+.entry-card.completed-view .entry-card-content {
+  justify-content: center;
+}
+
+/* Content Layout */
+.entry-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+/* Puzzle Display */
+.puzzle-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+}
+
+/* Puzzle Text - character display */
+.puzzle-text {
+  font-size: 1.375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.puzzle-char {
+  display: inline-block;
+}
+
+.puzzle-char.consonant {
+  color: var(--text-primary);
+}
+
+.puzzle-char.consonant.matched {
+  color: var(--accent-highlight);
+}
+
+.puzzle-char.vowel {
+  color: var(--text-primary);
+}
+
+.puzzle-char.vowel.revealed {
+  color: var(--accent-vowel-hint);
+}
+
+.puzzle-char.separator {
+  color: var(--text-primary);
+  margin: 0 2px;
+}
+
+/* Solved Badge */
+.solved-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid var(--text-primary);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+/* Clue Text */
+.entry-clue {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* Input Container */
+.input-container {
+  position: relative;
+  margin-top: var(--spacing-xs);
+}
+
+.guess-input {
+  width: 100%;
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-sm) var(--spacing-md);
+  padding-right: 40px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.guess-input::placeholder {
+  color: var(--text-muted);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.guess-input:focus {
+  outline: none;
+  border-color: var(--input-focus);
+  background: var(--input-focus);
+}
+
+.guess-input.wrong {
+  border-color: var(--accent-error);
+  background: rgba(239, 68, 68, 0.2);
+}
+
+/* Submit/Wrong Icons */
+.submit-icon,
+.wrong-icon {
+  position: absolute;
+  right: var(--spacing-sm);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.submit-icon {
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.submit-icon:hover {
+  color: var(--text-primary);
+}
+
+.wrong-icon {
+  color: var(--accent-error);
+}
+
+/* Input expand animation */
+.input-container {
+  animation: slideUp 0.2s ease-out;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .entry-card {
+    padding: var(--spacing-lg) var(--spacing-xl);
+  }
+
+  .puzzle-text {
+    font-size: 1.5rem;
+  }
+
+  .entry-clue {
+    font-size: 1rem;
+  }
+}

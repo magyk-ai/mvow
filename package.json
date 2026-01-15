@@ -1,0 +1,27 @@
+{
+  "name": "mvow",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Missing Vowel - A web-first vowel restoration puzzle game",
+  "engines": {
+    "node": ">=24"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=apps/web",
+    "dev": "npm run dev --workspace=apps/web",
+    "test": "npm run test --workspaces --if-present",
+    "test:engine": "npm run test --workspace=packages/engine",
+    "cli": "tsx packages/tools/cli/src/ks-run.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
+  }
+}
