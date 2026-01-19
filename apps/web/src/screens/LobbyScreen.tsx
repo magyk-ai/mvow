@@ -31,6 +31,16 @@ export default function LobbyScreen({ lobbyCode, onBack, onGameStart }: Props) {
   const [hasJoined, setHasJoined] = useState(false);
   const [copied, setCopied] = useState(false);
   const joinRequestSent = useRef(false);
+  const lastLobbyCode = useRef(lobbyCode);
+
+  // Reset join state when lobby code changes
+  useEffect(() => {
+    if (lastLobbyCode.current !== lobbyCode) {
+      lastLobbyCode.current = lobbyCode;
+      joinRequestSent.current = false;
+      setHasJoined(false);
+    }
+  }, [lobbyCode]);
 
   // Single effect to handle joining - triggered when conditions are met
   useEffect(() => {
