@@ -35,6 +35,12 @@ const io = new Server<ClientToServerEvents, ServerToClientEvents>(httpServer, {
   transports: ['websocket', 'polling'],
 });
 
+// Start server first so healthcheck passes
+httpServer.listen(config.port, () => {
+  console.log(`[Server] Running on port ${config.port}`);
+  console.log(`[Server] CORS origins: ${config.corsOrigins.join(', ')}`);
+});
+
 // Create Redis client and store
 const redis = createRedisClient();
 const store = new LobbyStore(redis);
@@ -50,12 +56,6 @@ redis.on('error', (err: Error) => {
 
 // Set up socket handlers
 setupSocketHandlers(io, store);
-
-// Start server
-httpServer.listen(config.port, () => {
-  console.log(`[Server] Running on port ${config.port}`);
-  console.log(`[Server] CORS origins: ${config.corsOrigins.join(', ')}`);
-});
 
 // Graceful shutdown
 process.on('SIGTERM', () => {
