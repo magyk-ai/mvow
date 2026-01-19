@@ -41,6 +41,16 @@
         "product",
         "business"
       ]
+    },
+    {
+      "puzzle_id": "ks_set_startups_001",
+      "title": "Startups",
+      "path": "/catalog/puzzles/ks_set_startups_001.json",
+      "tags": [
+        "professional",
+        "startups",
+        "business"
+      ]
     }
   ]
 }

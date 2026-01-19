@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "puzzle_id": "ks_set_startups_001",
+  "language": "en",
+  "title": "Startups",
+  "theme_reveal": {
+    "headline": "Startups",
+    "body": "Buzzwords, rituals, and realities of startup life."
+  },
+  "entries": [
+    {
+      "entry_id": "e1",
+      "clue": "The ‘aha!’ moment when customers can’t live without it.",
+      "answer": "PRODUCT MARKET FIT"
+    },
+    {
+      "entry_id": "e2",
+      "clue": "The real ...",
+      "answer": "MINIMUM VIABLE PRODUCT"
+    },
+    {
+      "entry_id": "e3",
+      "clue": "Investors in ~10 slides",
+      "answer": "PITCH DECK"
+    },
+    {
+      "entry_id": "e4",
+      "clue": "How many months you can survive",
+      "answer": "RUNWAY"
+    },
+    {
+      "entry_id": "e5",
+      "clue": "Users leaving. Ouch.",
+      "answer": "CHURN"
+    },
+    {
+      "entry_id": "e6",
+      "clue": "Startup fairy dust for going “viral”",
+      "answer": "GROWTH HACKING"
+    },
+    {
+      "entry_id": "e7",
+      "clue": "Gobbled up by a bigger fish!",
+      "answer": "ACQUISITION"
+    },
+    {
+      "entry_id": "e8",
+      "clue": "friends, angels in the beginning",
+      "answer": "SEED ROUND"
+    }
+  ]
+}
