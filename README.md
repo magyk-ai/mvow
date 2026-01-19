@@ -217,3 +217,4 @@ To add new puzzles:
 - Node 20 works but Node 24 is the target per spec
 - Security audit warnings are expected (dev dependencies)
 - PWA requires HTTPS in production (or localhost for testing)
+# Trigger deployment
