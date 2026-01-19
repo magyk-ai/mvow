@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "puzzle_id": "ks_set_personal_finance_001",
+  "language": "en",
+  "title": "Personal Finance",
+  "theme_reveal": {
+    "headline": "Personal Finance",
+    "body": "Everyday money moves that make Future You smile."
+  },
+  "entries": [
+    {
+      "entry_id": "e1",
+      "clue": "Your “rainy day” cash stash",
+      "answer": "EMERGENCY FUND"
+    },
+    {
+      "entry_id": "e2",
+      "clue": "Pay yourself first: money moves on autopilot",
+      "answer": "AUTOMATIC TRANSFER"
+    },
+    {
+      "entry_id": "e3",
+      "clue": "The number lenders obsess over",
+      "answer": "CREDIT SCORE"
+    },
+    {
+      "entry_id": "e4",
+      "clue": "Interest that earns… interest (snowball mode)",
+      "answer": "COMPOUND INTEREST"
+    },
+    {
+      "entry_id": "e5",
+      "clue": "Budget rule: needs / wants / savings",
+      "answer": "FIFTY THIRTY TWENTY"
+    },
+    {
+      "entry_id": "e6",
+      "clue": "Money you owe on a card (watch that APR)",
+      "answer": "CREDIT CARD BALANCE"
+    },
+    {
+      "entry_id": "e7",
+      "clue": "Retirement account with tax perks (US acronym)",
+      "answer": "ROTH IRA"
+    },
+    {
+      "entry_id": "e8",
+      "clue": "Own a tiny slice of lots of companies",
+      "answer": "INDEX FUND"
+    }
+  ]
+}

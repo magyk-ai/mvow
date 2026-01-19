@@ -51,6 +51,16 @@
         "startups",
         "business"
       ]
+    },
+    {
+      "puzzle_id": "ks_set_personal_finance_001",
+      "title": "Personal Finance",
+      "path": "/catalog/puzzles/ks_set_personal_finance_001.json",
+      "tags": [
+        "professional",
+        "finance",
+        "personal"
+      ]
     }
   ]
 }
