@@ -5,13 +5,14 @@ import './CatalogScreen.css';
 
 type Props = {
   onSelectPuzzle: (puzzleId: string) => void;
+  onHostGame?: (puzzleId: string) => void;
 };
 
 type PuzzleEntry = CatalogIndexJSON['puzzles'][0] & {
   isCompleted: boolean;
 };
 
-export default function CatalogScreen({ onSelectPuzzle }: Props) {
+export default function CatalogScreen({ onSelectPuzzle, onHostGame }: Props) {
   const [puzzles, setPuzzles] = useState<PuzzleEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -83,6 +84,17 @@ export default function CatalogScreen({ onSelectPuzzle }: Props) {
                   <span className="play-icon">▶</span>
                   <span className="play-text">{puzzle.isCompleted ? 'Play Again' : 'Play'}</span>
                 </button>
+
+                {onHostGame && (
+                  <button
+                    className="host-button"
+                    onClick={() => onHostGame(puzzle.puzzle_id)}
+                    aria-label={`Host multiplayer game for ${puzzle.title || puzzle.puzzle_id}`}
+                  >
+                    <span className="host-icon">👥</span>
+                    <span className="host-text">Host</span>
+                  </button>
+                )}
 
                 {puzzle.isCompleted && (
                   <div className="completed-indicator">

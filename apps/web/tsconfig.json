@@ -5,8 +5,10 @@
     "jsx": "react-jsx",
     "module": "ESNext",
     "target": "ES2022",
+    "types": ["vite/client"],
     "paths": {
-      "@ks/engine": ["../../packages/engine/src/index.ts"]
+      "@ks/engine": ["../../packages/engine/src/index.ts"],
+      "@ks/shared": ["../../packages/shared/src/index.ts"]
     }
   },
   "include": ["src"]

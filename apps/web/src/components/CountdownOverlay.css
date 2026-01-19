@@ -1,0 +1,52 @@
+.countdown-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.countdown-content {
+  text-align: center;
+}
+
+.countdown-number {
+  font-size: 8rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1;
+  animation: countdownPop 0.5s ease-out;
+}
+
+.countdown-text {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  margin-top: var(--spacing-lg);
+  font-weight: 500;
+}
+
+@keyframes countdownPop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .countdown-number {
+    animation: none;
+  }
+}

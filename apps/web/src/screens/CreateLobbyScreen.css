@@ -1,0 +1,130 @@
+.create-lobby-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-lobby-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+}
+
+.create-lobby-header h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.create-lobby-loading {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+}
+
+.create-lobby-content {
+  flex: 1;
+  padding: var(--spacing-md);
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.puzzle-preview {
+  background: var(--card-default);
+  border-radius: var(--card-border-radius);
+  padding: var(--spacing-lg);
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.puzzle-preview-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.puzzle-preview-id {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin: 0;
+  font-family: var(--font-mono);
+}
+
+.create-lobby-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.form-group input {
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  border: 2px solid transparent;
+  background: var(--card-default);
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: border-color var(--transition-fast);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--accent-highlight);
+}
+
+.form-group input::placeholder {
+  color: var(--text-secondary);
+}
+
+.error-message {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid var(--accent-error);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: var(--accent-error);
+  font-size: 0.875rem;
+}
+
+.create-button {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius-pill);
+  background: var(--accent-highlight);
+  color: var(--bg-gradient-end);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.create-button:hover:not(:disabled) {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(212, 168, 68, 0.3);
+}
+
+.create-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.form-hint {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  text-align: center;
+  margin: 0;
+}

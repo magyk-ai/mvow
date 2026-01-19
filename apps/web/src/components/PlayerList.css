@@ -1,0 +1,111 @@
+.player-list {
+  background: var(--card-default);
+  border-radius: var(--card-border-radius);
+  padding: var(--spacing-md);
+}
+
+.player-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.player-count {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.player-seats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.player-seat {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--border-radius-md);
+  transition: background var(--transition-fast);
+}
+
+.player-seat.is-you {
+  background: rgba(74, 144, 226, 0.15);
+  border: 1px solid rgba(74, 144, 226, 0.3);
+}
+
+.player-seat.empty {
+  opacity: 0.5;
+}
+
+.player-seat.disconnected {
+  opacity: 0.6;
+}
+
+.seat-number {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  min-width: 24px;
+}
+
+.player-name {
+  flex: 1;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.player-name.empty-text {
+  color: var(--text-secondary);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.you-badge {
+  margin-left: var(--spacing-xs);
+  font-size: 0.75rem;
+  color: var(--accent-highlight);
+  font-weight: 400;
+}
+
+.player-badges {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.host-badge {
+  font-size: 1rem;
+}
+
+.connection-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transition: background var(--transition-fast);
+}
+
+.connection-dot.online {
+  background: var(--accent-success);
+}
+
+.connection-dot.offline {
+  background: var(--accent-error);
+}
+
+.more-seats {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  padding: var(--spacing-sm);
+}

@@ -120,6 +120,39 @@
   font-weight: 600;
 }
 
+/* Host Button */
+.host-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-pill);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.host-button:hover,
+.host-button:focus-visible {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.host-button:active {
+  transform: scale(0.98);
+}
+
+.host-icon {
+  font-size: 0.875rem;
+}
+
+.host-text {
+  font-weight: 500;
+}
+
 /* Completed Indicator */
 .completed-indicator {
   display: flex;

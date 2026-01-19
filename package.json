@@ -13,13 +13,17 @@
   ],
   "scripts": {
     "build": "npm run build --workspace=apps/web",
+    "build:server": "npm run build --workspace=packages/server",
     "dev": "npm run dev --workspace=apps/web",
+    "dev:server": "npm run dev --workspace=packages/server",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:server\"",
     "test": "npm run test --workspaces --if-present",
     "test:engine": "npm run test --workspace=packages/engine",
     "cli": "tsx packages/tools/cli/src/ks-run.ts"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
+    "concurrently": "^8.2.2",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3",
     "vitest": "^2.1.8"

@@ -1,0 +1,183 @@
+.multiplayer-puzzle-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.puzzle-loading,
+.puzzle-error {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+}
+
+.puzzle-error {
+  color: var(--accent-error);
+}
+
+/* Header for multiplayer */
+.puzzle-header.multiplayer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md);
+  gap: var(--spacing-md);
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.header-subtitle {
+  font-size: 0.75rem;
+  color: var(--accent-highlight);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.header-main {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.header-right {
+  flex-shrink: 0;
+}
+
+/* Waiting overlay after finishing */
+.waiting-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.waiting-content {
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.waiting-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--accent-success);
+  color: white;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-lg);
+}
+
+.waiting-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.waiting-content p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0 0 var(--spacing-lg) 0;
+}
+
+.finished-count {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.1);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  display: inline-block;
+}
+
+/* Reuse puzzle content and footer styles from PuzzleScreen */
+.puzzle-content {
+  flex: 1;
+  padding: var(--spacing-md);
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.entry-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.puzzle-footer {
+  padding: var(--spacing-md);
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.hint-button-global {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--border-radius-pill);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  transition: all var(--transition-fast);
+}
+
+.hint-button-global:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hint-button-global:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hint-icon {
+  font-size: 1rem;
+}
+
+.hint-label {
+  font-weight: 500;
+}
+
+/* Give Up button */
+.give-up-button {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--border-radius-pill);
+  background: rgba(255, 100, 100, 0.2);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  transition: all var(--transition-fast);
+  border: 1px solid rgba(255, 100, 100, 0.3);
+}
+
+.give-up-button:hover {
+  background: rgba(255, 100, 100, 0.3);
+  border-color: rgba(255, 100, 100, 0.5);
+}
+
+.give-up-icon {
+  font-size: 1rem;
+}
+
+.give-up-label {
+  font-weight: 500;
+}
